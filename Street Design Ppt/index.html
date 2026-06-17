@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HF Falaknuma Road — Complete Street Study · Ahmedabad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+<div class="presentation-scaler" id="presentation-scaler">
+
+  <!-- ── HEADER ── -->
+  <header class="main-header">
+    <div class="header-logo">
+      <span class="logo-pill">COMPLETE STREET STUDY</span>
+      <span class="logo-road">HF Falaknuma Road · Ahmedabad</span>
+    </div>
+    <nav class="slide-tabs">
+      <button class="tab-btn active" data-target="0"><span class="tab-num">01</span> Site Location</button>
+      <button class="tab-btn" data-target="1"><span class="tab-num">02</span> Street Dimensions</button>
+      <button class="tab-btn" data-target="2"><span class="tab-num">03</span> Existing Issues</button>
+      <button class="tab-btn" data-target="3"><span class="tab-num">04</span> Proposed Section</button>
+      <button class="tab-btn" data-target="4"><span class="tab-num">05</span> Complete Street Vision</button>
+    </nav>
+    <div class="header-nav-controls">
+      <button class="hdr-btn" id="hdr-prev"><i class="fa-solid fa-chevron-left"></i></button>
+      <span class="slide-counter"><span id="cur-slide">1</span> / 5</span>
+      <button class="hdr-btn" id="hdr-next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </header>
+
+  <!-- ── SLIDES VIEWPORT ── -->
+  <main class="slides-viewport">
+
+    <!-- ══════════════════════════════════════════
+         SLIDE 01 — SITE LOCATION
+    ══════════════════════════════════════════ -->
+    <section class="slide active" id="slide-0">
+      <!-- Full bleed map background -->
+      <div class="map-bg">
+        <div class="map-layer map-blurred"></div>
+        <div class="map-layer map-sharp"></div>
+        <!-- Glowing corridor line (vertical road) -->
+        <div class="corridor-overlay">
+          <div class="corridor-line"></div>
+          <div class="hotspot hotspot-n" title="Makkanagar Road Junction">
+            <div class="hs-ring"></div><div class="hs-dot"></div>
+            <div class="hs-label top">Makkanagar Rd</div>
+          </div>
+          <div class="hotspot hotspot-s" title="Sonal Road Junction">
+            <div class="hs-ring"></div><div class="hs-dot"></div>
+            <div class="hs-label bot">Sonal Road</div>
+          </div>
+          <!-- Floating callout badges -->
+          <div class="map-callout callout-row">
+            <span class="callout-icon"><i class="fa-solid fa-arrows-left-right"></i></span>
+            <div><div class="callout-val">12 m</div><div class="callout-sub">Right of Way</div></div>
+          </div>
+          <div class="map-callout callout-stretch">
+            <span class="callout-icon"><i class="fa-solid fa-ruler-horizontal"></i></span>
+            <div><div class="callout-val">300 m</div><div class="callout-sub">Study Stretch</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left data panel -->
+      <div class="slide-layout">
+        <div class="data-card glass-light s1-card">
+          <div class="card-eyebrow">GUJARAT, INDIA</div>
+          <h1 class="card-title">Ahmedabad</h1>
+          <p class="card-sub">Juhapura / Makkanagar Ward</p>
+          <div class="divider"></div>
+          <table class="info-table">
+            <tr><td class="it-lbl">STREET</td><td class="it-val orange">HF Falaknuma Rd</td></tr>
+            <tr><td class="it-lbl">FULL NAME</td><td class="it-val">Himalaya Falaknuma Road</td></tr>
+            <tr><td class="it-lbl">WARD</td><td class="it-val">Makkanagar, Juhapura</td></tr>
+            <tr><td class="it-lbl">ROW</td><td class="it-val">12 metres</td></tr>
+            <tr><td class="it-lbl">STUDY STRETCH</td><td class="it-val bold">~300 metres</td></tr>
+            <tr><td class="it-lbl">FROM</td><td class="it-val">Makkanagar Road</td></tr>
+            <tr><td class="it-lbl">TO</td><td class="it-val">Sonal Road</td></tr>
+          </table>
+          <div class="divider"></div>
+          <div class="badge-row">
+            <span class="badge badge-grey">Local Residential Collector</span>
+            <span class="badge badge-red">Needs Redevelopment</span>
+          </div>
+          <button class="cta-btn next-slide-btn">Analyze Street Dimensions <i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <!-- right legend -->
+        <div class="s1-legend">
+          <div class="legend-card dark-card">
+            <div class="lc-title">:: MAP CONTEXT</div>
+            <div class="lc-item"><span class="lc-dot orange-dot"></span>Study Corridor (300m)</div>
+            <div class="lc-item"><span class="lc-dot grey-dot"></span>Urban Residential Blocks</div>
+            <div class="lc-item"><span class="lc-dot white-dot"></span>Road Network</div>
+          </div>
+          <div class="legend-card dark-card stat-card">
+            <div class="sc-row"><span class="sc-val">~600k</span><span class="sc-lbl">Population density area</span></div>
+            <div class="sc-row"><span class="sc-val orange">12m</span><span class="sc-lbl">Available ROW</span></div>
+            <div class="sc-row"><span class="sc-val">5km²</span><span class="sc-lbl">Juhapura area</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SLIDE 02 — STREET DIMENSIONS
+    ══════════════════════════════════════════ -->
+    <section class="slide" id="slide-1">
+      <div class="slide-ambient" style="--glow-x:70%;--glow-y:30%"></div>
+      <div class="slide-layout two-col">
+
+        <!-- Left panel -->
+        <div class="data-card glass-light">
+          <div class="card-eyebrow">EXISTING SECTION ANALYSIS</div>
+          <h2 class="card-title-md">Street Dimensions</h2>
+          <p class="card-sub">ROW: 12 Metres</p>
+          <div class="divider"></div>
+          <div class="about-text">
+            <p>HF Falaknuma Road is a local collector road serving a dense residential neighbourhood in Juhapura, connecting Makkanagar Road in the north to Sonal Road in the south. The 300m study stretch passes through a high-footfall zone with shops, a community hall, and dense housing.</p>
+            <p class="highlight-box">Despite a 12m ROW — sufficient for a complete street layout — the existing section dedicates nearly all space to motorised vehicles, leaving pedestrians and cyclists without any safe, dedicated space.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="toggle-group">
+            <span class="tg-label">Section View:</span>
+            <div class="tg-switch">
+              <button class="tg-btn active" id="btn-existing">Existing Section</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right panel -->
+        <div class="data-card glass-light vis-panel">
+          <div class="vis-header">
+            <h3 class="vis-title">Section Metrics</h3>
+            <span class="row-chip">Total ROW: 12m</span>
+          </div>
+          <!-- Metrics grid -->
+          <div class="metrics-grid" id="metrics-grid">
+            <div class="metric-tile">
+              <i class="fa-solid fa-arrows-left-right mt-icon"></i>
+              <div class="mt-body">
+                <span class="mt-lbl">Right of Way</span>
+                <span class="mt-val orange">12 m</span>
+                <span class="mt-desc">Total street width</span>
+              </div>
+            </div>
+            <div class="metric-tile">
+              <i class="fa-solid fa-car mt-icon"></i>
+              <div class="mt-body">
+                <span class="mt-lbl">Carriageway</span>
+                <span class="mt-val orange" id="m-carriage">8 m</span>
+                <span class="mt-desc" id="d-carriage">Mixed 2-way traffic</span>
+              </div>
+            </div>
+            <div class="metric-tile">
+              <i class="fa-solid fa-person-walking mt-icon"></i>
+              <div class="mt-body">
+                <span class="mt-lbl">Footpath</span>
+                <span class="mt-val red" id="m-footpath">~0.5 m</span>
+                <span class="mt-desc" id="d-footpath">Encroached / absent</span>
+              </div>
+            </div>
+            <div class="metric-tile">
+              <i class="fa-solid fa-bicycle mt-icon"></i>
+              <div class="mt-body">
+                <span class="mt-lbl">Cycle Track</span>
+                <span class="mt-val red" id="m-cycle">NIL</span>
+                <span class="mt-desc" id="d-cycle">No provision</span>
+              </div>
+            </div>
+            <div class="metric-tile">
+              <i class="fa-solid fa-tree mt-icon"></i>
+              <div class="mt-body">
+                <span class="mt-lbl">Street Trees</span>
+                <span class="mt-val red" id="m-trees">NIL</span>
+                <span class="mt-desc" id="d-trees">No shade / greenery</span>
+              </div>
+            </div>
+            <div class="metric-tile">
+              <i class="fa-solid fa-square-p mt-icon"></i>
+              <div class="mt-body">
+                <span class="mt-lbl">On-street Parking</span>
+                <span class="mt-val orange" id="m-parking">1.5 m</span>
+                <span class="mt-desc" id="d-parking">Both sides informal</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cross section bar -->
+          <div class="cs-container">
+            <div class="cs-title-bar">
+              <span id="cs-title">EXISTING CROSS-SECTION · 12m ROW</span>
+              <span class="cs-tip"><i class="fa-solid fa-hand-pointer"></i> Hover to explore</span>
+            </div>
+            <div class="cs-bar" id="cs-bar"></div>
+            <div class="cs-info-card" id="cs-info">
+              <div class="csi-header">
+                <span class="csi-name" id="csi-name">Footpath (Encroached)</span>
+                <span class="csi-width" id="csi-width">0.5m</span>
+              </div>
+              <p class="csi-desc" id="csi-desc">Mostly blocked by vendors, parked two-wheelers, and utility poles, forcing pedestrians onto the carriageway.</p>
+            </div>
+            <div class="cs-legend">
+              <span class="cl-item"><span class="cl-dot" style="background:#34c759"></span>Footpath</span>
+              <span class="cl-item"><span class="cl-dot" style="background:#5856d6"></span>Cycle Track</span>
+              <span class="cl-item"><span class="cl-dot" style="background:#007aff"></span>Carriageway</span>
+              <span class="cl-item"><span class="cl-dot" style="background:#a2845e"></span>Parking</span>
+              <span class="cl-item"><span class="cl-dot" style="background:#30b050"></span>Green Buffer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SLIDE 03 — EXISTING ISSUES
+    ══════════════════════════════════════════ -->
+    <section class="slide" id="slide-2">
+      <div class="slide-ambient" style="--glow-x:50%;--glow-y:10%"></div>
+      <div class="slide-layout issues-layout">
+
+        <!-- Top header bar -->
+        <div class="data-card glass-light issues-hdr">
+          <div class="ih-left">
+            <div class="card-eyebrow">CURRENT CONDITION ANALYSIS</div>
+            <h2 class="card-title-md" style="margin:0">Existing Issues</h2>
+          </div>
+          <div class="filter-wrap">
+            <span class="fw-lbl">Filter:</span>
+            <div class="filter-pills">
+              <button class="fp active" data-sev="all">All (7)</button>
+              <button class="fp" data-sev="critical"><span class="fp-dot red"></span>Critical (3)</button>
+              <button class="fp" data-sev="moderate"><span class="fp-dot amber"></span>Moderate (3)</button>
+              <button class="fp" data-sev="low"><span class="fp-dot green"></span>Low (1)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cards grid -->
+        <div class="issues-body">
+          <div class="issue-cards" id="issue-cards">
+            <div class="ic" data-sev="critical" data-id="1" data-pos="10%">
+              <div class="ic-badge critical">01 · CRITICAL</div>
+              <h3>No Footpath</h3>
+              <p>Pedestrians walk on the carriageway. Both sides lack any usable footpath — surfaces are occupied by vendors, construction, and parked two-wheelers.</p>
+              <div class="ic-foot"><span>Impact: Daily safety hazard</span><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="ic" data-sev="critical" data-id="2" data-pos="28%">
+              <div class="ic-badge critical">02 · CRITICAL</div>
+              <h3>Encroachment &amp; Vendors</h3>
+              <p>Street vendors and building material stack along both carriageway edges, reducing effective road width from 12m to under 8m at peak times.</p>
+              <div class="ic-foot"><span>Impact: Traffic &amp; safety</span><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="ic" data-sev="critical" data-id="3" data-pos="55%">
+              <div class="ic-badge critical">03 · CRITICAL</div>
+              <h3>No Cycling Infrastructure</h3>
+              <p>Cyclists share mixed traffic with no protection. No lane markings or physical barriers. Connects two residential zones yet offers no safe route.</p>
+              <div class="ic-foot"><span>Impact: High cyclist risk</span><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="ic" data-sev="moderate" data-id="4" data-pos="20%">
+              <div class="ic-badge moderate">04 · MODERATE</div>
+              <h3>No Tree Cover</h3>
+              <p>Zero street trees along the 300m stretch. Surface temperatures exceed 42°C in summer creating a severe urban heat island effect on this road.</p>
+              <div class="ic-foot"><span>Impact: Thermal discomfort</span><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="ic" data-sev="moderate" data-id="5" data-pos="70%">
+              <div class="ic-badge moderate">05 · MODERATE</div>
+              <h3>Poor Stormwater Drainage</h3>
+              <p>Blocked drains cause waterlogging within 20 minutes of moderate rain. Creates potholes, degrades road surface, and makes walking impossible.</p>
+              <div class="ic-foot"><span>Impact: Infrastructure damage</span><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="ic" data-sev="moderate" data-id="6" data-pos="42%">
+              <div class="ic-badge moderate">06 · MODERATE</div>
+              <h3>Zero Accessibility</h3>
+              <p>No tactile paving, kerb ramps, or safe crossings. Persons with disabilities, elderly residents, and children cannot use the street safely.</p>
+              <div class="ic-foot"><span>Impact: Inclusion barrier</span><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+            <div class="ic" data-sev="low" data-id="7" data-pos="85%">
+              <div class="ic-badge low">07 · LOW</div>
+              <h3>Inadequate Street Lighting</h3>
+              <p>Sparse and poorly positioned street lights leave large sections of the road in darkness after 8 PM, increasing crime risk and pedestrian danger.</p>
+              <div class="ic-foot"><span>Impact: Night-time safety</span><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+          </div>
+
+          <!-- Linear timeline map -->
+          <div class="data-card glass-light timeline-card">
+            <div class="tc-title">Spatial Distribution of Issues · 300m Study Stretch</div>
+            <div class="timeline-graphic">
+              <div class="tl-line"></div>
+              <div class="tl-spot red"  style="left:10%" data-id="1"><span>01</span></div>
+              <div class="tl-spot amber" style="left:20%" data-id="4"><span>04</span></div>
+              <div class="tl-spot amber" style="left:28%" data-id="2"><span>02</span></div>
+              <div class="tl-spot amber" style="left:42%" data-id="6"><span>06</span></div>
+              <div class="tl-spot red"  style="left:55%" data-id="3"><span>03</span></div>
+              <div class="tl-spot amber" style="left:70%" data-id="5"><span>05</span></div>
+              <div class="tl-spot green" style="left:85%" data-id="7"><span>07</span></div>
+              <span class="tl-ep tl-start">Makkanagar Rd</span>
+              <span class="tl-ep tl-end">Sonal Rd</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Stats bar -->
+        <div class="data-card glass-light stats-bar">
+          <div class="sb-item"><span class="sb-num red" data-count="3">0</span><span class="sb-lbl">Critical Issues</span></div>
+          <div class="sb-item"><span class="sb-num orange" data-count="3">0</span><span class="sb-lbl">Moderate Issues</span></div>
+          <div class="sb-item"><span class="sb-num green" data-count="1">0</span><span class="sb-lbl">Low Priority</span></div>
+          <div class="sb-item"><span class="sb-num" data-count="0">0</span><span class="sb-lbl">Cycle Infrastructure</span></div>
+          <div class="sb-item"><span class="sb-num" data-count="0">0</span><span class="sb-lbl">Street Trees</span></div>
+          <div class="sb-item"><span class="sb-num orange">12m</span><span class="sb-lbl">ROW Available</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SLIDE 04 — PROPOSED SECTION
+    ══════════════════════════════════════════ -->
+    <section class="slide" id="slide-3">
+      <div class="slide-ambient" style="--glow-x:30%;--glow-y:60%"></div>
+      <div class="slide-layout two-col">
+
+        <!-- Left panel -->
+        <div class="data-card glass-light">
+          <div class="card-eyebrow">PROPOSED COMPLETE STREET DESIGN</div>
+          <h2 class="card-title-md">New Section</h2>
+          <p class="card-sub">12m ROW · Proposed composition</p>
+          <div class="divider"></div>
+          <p class="about-text-sm">This proposed section reorganises the 12m ROW into a high-quality, pedestrian-oriented street. Left to right, the street provides a 2.0m raised interactive footpath, a 1.0m green MUZ with benches and lighting, a 6.0m two-way carriageway, a 0.5m buffer MUZ, a 1.0m protected cycle track, and a 1.5m residential footpath on the right side.</p>
+          <div class="divider"></div>
+          <div class="about-text-sm">
+            2m raised footpath on the left side acts as an interaction zone with direct shopfront and vendor access. 1m MUZ follows with greenery, benches and street lights. On the right side there is a 1.5m residential footpath, 1m protected cycle track, 0.5m green buffer MUZ and a 6m carriageway with two-way traffic and no divider.
+          </div>
+
+          <div class="divider"></div>
+          <h3 class="section-sub-title">Space Allocation</h3>
+          <div class="alloc-table">
+            <div class="at-row">
+              <span class="at-icon" style="background:#34c759"><i class="fa-solid fa-person-walking"></i></span>
+              <span class="at-lbl">Interactive Footpath Zone</span>
+              <span class="at-val">2.0m</span>
+            </div>
+            <div class="at-row">
+              <span class="at-icon" style="background:#30b050"><i class="fa-solid fa-tree"></i></span>
+              <span class="at-lbl">Left MUZ</span>
+              <span class="at-val">1.0m</span>
+            </div>
+            <div class="at-row">
+              <span class="at-icon" style="background:#007aff"><i class="fa-solid fa-car"></i></span>
+              <span class="at-lbl">Carriageway</span>
+              <span class="at-val">6.0m</span>
+            </div>
+            <div class="at-row">
+              <span class="at-icon" style="background:#34c759"><i class="fa-solid fa-person-walking"></i></span>
+              <span class="at-lbl">Residential Footpath</span>
+              <span class="at-val">1.5m</span>
+            </div>
+            <div class="at-row">
+              <span class="at-icon" style="background:#5856d6"><i class="fa-solid fa-bicycle"></i></span>
+              <span class="at-lbl">Cycle Track</span>
+              <span class="at-val">1.0m</span>
+            </div>
+            <div class="at-row">
+              <span class="at-icon" style="background:#30b050"><i class="fa-solid fa-seedling"></i></span>
+              <span class="at-lbl">Right MUZ Buffer</span>
+              <span class="at-val">0.5m</span>
+            </div>
+            <div class="at-row at-total">
+              <span class="at-icon" style="background:#ff6b00"><i class="fa-solid fa-arrows-left-right"></i></span>
+              <span class="at-lbl">Total Right of Way</span>
+              <span class="at-val"><b>12.0m</b></span>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+          <div class="proposed-badges">
+            <span class="prop-badge green-badge"><i class="fa-solid fa-check"></i> Active shopfront edge</span>
+            <span class="prop-badge green-badge"><i class="fa-solid fa-check"></i> Green MUZ seating</span>
+            <span class="prop-badge green-badge"><i class="fa-solid fa-check"></i> Two-way carriageway</span>
+            <span class="prop-badge green-badge"><i class="fa-solid fa-check"></i> Protected cycle lane</span>
+            <span class="prop-badge green-badge"><i class="fa-solid fa-check"></i> Residential footpath</span>
+            <span class="prop-badge green-badge"><i class="fa-solid fa-check"></i> Landscape buffer</span>
+          </div>
+        </div>
+
+        <!-- Right panel -->
+        <div class="data-card glass-light vis-panel">
+          <div class="vis-header">
+            <h3 class="vis-title">Proposed New Section</h3>
+            <span class="row-chip green-chip">12m ROW Illustration</span>
+          </div>
+
+          <div class="cs-illustration" style="padding-top:12px; text-align:center">
+            <img src="assets/proposed section.jpeg" alt="Proposed new section illustration" style="max-width:100%; height:auto; border-radius:8px; box-shadow:0 10px 24px rgba(0,0,0,0.12);" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         SLIDE 05 — COMPLETE STREET VISION
+    ══════════════════════════════════════════ -->
+    <section class="slide" id="slide-4">
+      <!-- Full bleed street illustration -->
+      <div class="vision-bg">
+        <div class="vision-img-layer"></div>
+        <div class="vision-overlay"></div>
+      </div>
+
+      <div class="slide-layout vision-layout">
+        <!-- Top title bar -->
+        <div class="vision-title-card glass-dark">
+          <div class="card-eyebrow light">THE COMPLETE STREET VISION</div>
+          <h2 class="card-title-white">HF Falaknuma Road · Transformed</h2>
+          <p class="card-sub-white">A 12m ROW redesigned to serve everyone — pedestrians, cyclists, and vehicles equally.</p>
+        </div>
+
+        <!-- Bottom elements grid -->
+        <div class="vision-elements-row">
+          <div class="ve-card glass-dark">
+            <div class="ve-icon"><i class="fa-solid fa-person-walking"></i></div>
+            <h4>Wide Footpaths</h4>
+            <p>1.5m continuous, level, tactile paved footpath on both sides with unobstructed pedestrian flow</p>
+          </div>
+          <div class="ve-card glass-dark">
+            <div class="ve-icon" style="color:#5856d6"><i class="fa-solid fa-bicycle"></i></div>
+            <h4>Protected Cycle Tracks</h4>
+            <p>1.0m physically segregated cycle lanes on each side, painted green with bollard protection</p>
+          </div>
+          <div class="ve-card glass-dark">
+            <div class="ve-icon" style="color:#007aff"><i class="fa-solid fa-car"></i></div>
+            <h4>Organised Traffic</h4>
+            <p>7m carriageway with lane markings, speed calming measures and organised 2-way traffic flow</p>
+          </div>
+          <div class="ve-card glass-dark">
+            <div class="ve-icon" style="color:#34c759"><i class="fa-solid fa-tree"></i></div>
+            <h4>Street Tree Canopy</h4>
+            <p>Native shade trees planted at 8m spacing on both sides — reducing heat island by up to 4°C</p>
+          </div>
+          <div class="ve-card glass-dark">
+            <div class="ve-icon" style="color:#ffd60a"><i class="fa-solid fa-lightbulb"></i></div>
+            <h4>LED Street Lighting</h4>
+            <p>Solar-powered LED luminaires at 15m spacing ensuring safe visibility for all users after dark</p>
+          </div>
+          <div class="ve-card glass-dark">
+            <div class="ve-icon" style="color:#ff9f0a"><i class="fa-solid fa-universal-access"></i></div>
+            <h4>Universal Accessibility</h4>
+            <p>Kerb ramps at every junction, tactile paths for the visually impaired and accessible pedestrian crossings</p>
+          </div>
+          <div class="ve-card glass-dark">
+            <div class="ve-icon" style="color:#ff6b00"><i class="fa-solid fa-chair"></i></div>
+            <h4>Street Furniture</h4>
+            <p>Benches, waste bins, water fountains and cycle stands integrated within the footpath zone</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="main-footer">
+    <button class="foot-btn" id="prev-btn" disabled><i class="fa-solid fa-chevron-left"></i> Previous</button>
+    <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+    <button class="foot-btn active-btn" id="next-btn">Next <i class="fa-solid fa-chevron-right"></i></button>
+  </footer>
+
+</div><!-- /presentation-scaler -->
+
+<script src="https://cdn.jsdelivr.net/npm/motion@11.11.13/dist/motion.js"></script>
+<script src="app.js?v=3"></script>
+</body>
+</html>
